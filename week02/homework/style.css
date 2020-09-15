@@ -1,0 +1,52 @@
+@media (min-width: 320px) {
+    header {
+        font-size: 20px;
+        color: yellowgreen;
+        max-width: 100%;
+    }
+    main {
+        width: 300px;
+    }
+    img {
+        max-width: 100px;
+        float: left;
+        padding: 7px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 40px;
+        color: red;
+    }
+    main {
+        width: 600px;
+        
+    }
+    img {
+        max-width: 200px;
+        float: left;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 1023px) {
+    header {
+        font-size: 60px;
+        color: blue;
+    }
+    main {
+        width: 900px;
+    }
+    img {
+        max-width: 300px;
+        float: left;
+        padding: 7px;
+    }
+}
+
+.cat2 {
+    float: right;
+}
