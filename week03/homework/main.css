@@ -62,7 +62,7 @@ nav ul a {
 }
 
 main {
-    text-align: justify;
+    text-align: center;
     padding: 15px;
 }
 
@@ -92,6 +92,7 @@ main div {
     max-width: 500px;
     display: block;
     margin: auto;
+    text-align: justify
 }
 
 footer {
