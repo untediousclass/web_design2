@@ -72,7 +72,7 @@ nav ul a {
         padding: 5px 0px;
     }
     
-    nav.flex {
+    .flex {
         flex-direction: row;
         justify-content: center;
         align-items: center;
