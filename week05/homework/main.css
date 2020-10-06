@@ -1,0 +1,25 @@
+@import url(grid.css);
+@import url(colors.css);
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+a {
+    text-align: center;
+}
+
+div img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
