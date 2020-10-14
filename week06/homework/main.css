@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(colors.css);
+@import url(flex.css);
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #56C9C1;
+}
+
+nav {
+    background-color: hsla(0, 100%, 90%, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+nav ul li {
+    border-bottom: 1px dashed #937B63;
+    padding: 10px;
+    color: black;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+img.nav-logo {
+    max-width: 250px;
+    padding: 10px;
+}
+
+img.menu-toggle {
+    width: 40px;
+    padding: 38px 10px 0px 0px;
+}
+
+input#Toggle {
+    display: none;
+}
+input#Toggle:checked + ul {
+    display:block;
+}
+
+label[for="Toggle"] {
+    float: right; 
+}
+
+main div {
+    margin: 10px;
+}
+
+footer {
+    background-color: #937B63;
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+@media (max-width: 767px) {
+    img.nav-logo { 
+        max-width: 175px;
+    }
+
+    img.nav-logo2 {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        border: none;
+    }
+    
+    img.nav-logo {
+        display: none;
+    }
+
+    img.nav-logo2 {
+        max-width: 175px;
+    }
+    
+    label[for="Toggle"] {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+}
