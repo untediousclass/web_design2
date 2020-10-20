@@ -57,6 +57,7 @@ label[for="Toggle"] {
     float: right; 
 }
 
+
 div.space {
     padding: 10px;
 }
@@ -92,6 +93,8 @@ img.sizing {
     max-width: 100%;
     margin: 0px;
     padding: 0px;
+    display: block;
+    margin: auto;
 }
 
 img.sizing2 {
@@ -107,7 +110,8 @@ figcaption {
 }
 
 .box-resize {
-    min-width: 90%;
+    min-width: 30%;
+    max-width: 700px;
 }
 
 form {
@@ -115,7 +119,8 @@ form {
     margin: auto;
     text-align: center;
     padding: 5px;
-    max-width: 80%;
+    max-width: 100%;
+    background-color: rgba(53, 58, 71,0.09);
 }
 
 .rev {
@@ -144,6 +149,8 @@ textarea {
         max-width: 90%; 
         font-size: 12pt;
     }
+
+    
 }
 
 
@@ -156,10 +163,18 @@ textarea {
         border-bottom: none;
     }
 
-
+    img.sizing {
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        margin: auto;
+    }
+    
 }
 
 @media (min-width: 768px) {
+    
     nav ul li {
         border: hidden 2px;
         border-radius: 5px;
@@ -185,6 +200,18 @@ textarea {
 
     nav ul {
         display: block;
+    }
+
+    img.sizing {
+        max-width: 768px;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        margin: auto;
+    }
+    
+    .pfont {
+        max-width: 768px;
     }
 
     footer ul {
