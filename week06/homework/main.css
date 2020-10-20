@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url(colors.css);
-@import url(flex.css);
+@import url(container.css);
 
 body {
     font-family: Roboto, sans-serif;
@@ -13,7 +13,7 @@ a {
     color: black;
 }
 
-a:hover {
+li a:hover {
     color: #56C9C1;
 }
 
@@ -34,18 +34,16 @@ nav ul li {
     color: black;
 }
 
-nav ul li:last-child {
-    border-bottom: none;
-}
 
 img.nav-logo {
-    max-width: 250px;
     padding: 10px;
+    margin: 10px;
 }
 
 img.menu-toggle {
     width: 40px;
     padding: 38px 10px 0px 0px;
+    margin: 10px;
 }
 
 input#Toggle {
@@ -63,6 +61,10 @@ main div {
     margin: 10px;
 }
 
+a.font-size{
+    font-size: 20px;
+}
+
 footer {
     background-color: #937B63;
     color: white;
@@ -76,26 +78,30 @@ footer {
         max-width: 175px;
     }
 
-    img.nav-logo2 {
-        display: none;
+    nav ul li:last-child {
+        border-bottom: none;
     }
 
-    nav ul {
-        display: none;
-    }
 }
 
 @media (min-width: 768px) {
     nav ul li {
-        border: none;
-    }
-    
-    img.nav-logo {
-        display: none;
+        border: hidden 2px;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 20pt;
+        margin: 20px;
     }
 
-    img.nav-logo2 {
-        max-width: 175px;
+    nav ul li:hover {
+        border: #56C9C1;
+        background-color: white;
+    }
+
+    img.nav-logo {
+        display: block;
+        margin: auto;
+        width: 250px;
     }
     
     label[for="Toggle"] {
@@ -105,5 +111,5 @@ footer {
     nav ul {
         display: block;
     }
-
+    
 }
