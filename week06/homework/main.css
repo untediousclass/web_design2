@@ -50,28 +50,109 @@ input#Toggle {
     display: none;
 }
 input#Toggle:checked + ul {
-    display:block;
+    display: block;
 }
 
 label[for="Toggle"] {
     float: right; 
 }
 
-main div {
-    margin: 10px;
+
+div.space {
+    padding: 10px;
 }
 
 a.font-size{
     font-size: 20px;
 }
 
+.pfont {
+    font-size: 18pt;
+}
+
 footer {
     background-color: #937B63;
     color: white;
-    text-align: center;
-    height: 100px;
-    line-height: 100px;
 }
+
+img.none {
+    display: none;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 12pt;
+}
+
+img.sizing {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    margin: auto;
+}
+
+img.sizing2 {
+    width: 200px;
+    
+}
+
+
+figcaption {
+    width: 200px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.box-resize {
+    min-width: 30%;
+    max-width: 700px;
+}
+
+form {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    max-width: 100%;
+    background-color: rgba(53, 58, 71,0.09);
+}
+
+.rev {
+    border: outset 1px;
+    border-radius: 5px; 
+    box-shadow: 1px 2px;
+    line-height: 20pt;
+}
+
+
+textarea {
+    font-family: Roboto, sans-serif;
+}
+
+@media (min-width: 320px) {
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        padding: 10px;
+    }
+    .pfont {
+        display: block;
+        margin: auto;
+        max-width: 90%; 
+        font-size: 12pt;
+    }
+
+    
+}
+
 
 @media (max-width: 767px) {
     img.nav-logo { 
@@ -82,14 +163,23 @@ footer {
         border-bottom: none;
     }
 
+    img.sizing {
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        margin: auto;
+    }
+    
 }
 
 @media (min-width: 768px) {
+    
     nav ul li {
         border: hidden 2px;
         border-radius: 5px;
         display: inline-block;
-        font-size: 20pt;
+        font-size: 1.5em;
         margin: 20px;
     }
 
@@ -110,6 +200,25 @@ footer {
 
     nav ul {
         display:block;
+    }
+
+    img.sizing {
+        max-width: 768px;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        margin: auto;
+    }
+    
+    .pfont {
+        max-width: 768px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1em;
     }
     
 }
