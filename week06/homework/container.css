@@ -1,24 +1,32 @@
 .grid {
         display: grid;
-
+        grid-gap: none;
+        grid-template-areas:
+        "header"
+        "content"
+        "footer"
 }
 
-
-.flex1{
-        flex-direction:column;
+.header {
+        grid-area: header;
 }
 
-@media (min-width: 768px) {
-.flex1 {
+.content {
+        grid-area: content;
+}
+
+.footer {
+        grid-area: footer;
+}
+
+.flex {
         display: flex;
         margin: 0px;
         padding: 2px;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        font-size: 18pt;
         line-height: 20px;
-
-        }
 }
 
