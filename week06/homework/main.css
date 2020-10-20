@@ -130,6 +130,9 @@ form {
     line-height: 20pt;
 }
 
+.hour {
+    text-align: center;
+}
 
 textarea {
     font-family: Roboto, sans-serif;
