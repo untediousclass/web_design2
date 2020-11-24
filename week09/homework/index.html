@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 09</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #myHeading {
+            background-color: yellow;
+            margin: 0px;
+            padding: 20px;
+        }
+        #myDiv {
+            height: 400px;
+            background-color: purple;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myHeading">My name is, <span id="userName">______</span>!</h1>
+   
+
+    <div id="myDiv">Fill up the space by clicking this: 
+        <button href="#" id="addText">Add some Text</button>
+    </div>
+
+    <button href="#" id="colorChange">Change the Color</button>
+    
+
+    <script>
+        let answer = prompt("Name thyself");
+        console.log(answer);
+        document.getElementById("userName").innerText = answer;
+
+        let bigDiv = document.getElementById("myDiv");
+        let btn1 = document.getElementById("colorChange");
+        let docHeading = document.getElementById("myHeading");
+
+        let btn2 = document.getElementById("addText");
+
+        btn2.addEventListener("click", function() {
+            let userInput = prompt("What would you like to add to this space?");
+            let smallHeading = document.createElement("h5");
+                smallHeading.innerText = userInput;
+                smallHeading.style.fontstyle = "italic";
+                bigDiv.appendChild(smallHeading);
+        })
+ 
+
+        btn1.addEventListener("click", function() {
+            
+            
+            let userAnswer = confirm("Are you sure you want to change?");
+
+            
+
+            console.log(userAnswer);
+
+            if(userAnswer == true) {
+                docHeading.style.backgroundColor = "aquamarine";
+                bigDiv.style.backgroundColor = "gold";
+                bigDiv.style.color = "black";
+                
+
+                alert("Changes have been executed!");
+                }
+                else {
+                    alert("No action will be taken.");
+                }
+
+        }) ;
+
+        
+    </script>
+</body>
+</html>
