@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Source and Options</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="main.css">
+  <title>JavaScript-free Toggle Navbar</title>
 </head>
 <body>
-    
+  <header>
+    <nav>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png" class="logo" alt="company logo">
+
+      <label for="toggleAssist">
+        <img src="menuicon.png" class="toggle-button" alt="menu toggle button">
+      </label>
+      <input type="checkbox" id="toggleAssist">
+      
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section>
+      <h1>Choose your foot's destiny</h1>
+
+      <div class="flexbox">
+          <div><button id="shoe1"><img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/gsuin11ptg5qgktmzoat/air-force-1-07-mens-shoe-JkTGzADv.jpg" alt="nike AF1" class="container"></button></div>
+          <div><button id="shoe2"><img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/81aabc82-c2c1-4986-b698-1de2316b5fb7/air-max-90-mens-shoe-xSPlJ1.jpg" alt="nike airmax 90" class="container"></button></div>
+          <div><button id="shoe3"><img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f2004ec7-087a-4970-a1dd-11690b4634db/air-max-95-mens-shoe-5XBQXd.jpg" alt="nike airmax 95" class="container"></button></div>
+          <div><button id="shoe4"><img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/549db767-ad52-4320-ba7f-f634c9c9e4e0/air-max-97-se-mens-shoe-6DPq65.jpg" alt="nike airmax 97" class="container"></button></div>
+      </div>
+      <h2>You chose:</h2>
+      <div>
+          <img src="" id="shoeIMG">
+
+      </div>
+    </section>
+  </main>
+  
+  
+  <footer></footer>
+  <script src="app.js"></script>
 </body>
 </html>
