@@ -43,7 +43,7 @@ let categoryUpdate = function () {
     if(catSelect.value === "food") {
         console.log("food");
         foodSubcats.forEach(function (elem){
-            let opt = document.createElement("option");
+            let opt = document.createElement(ㅐ"option");
             opt.value = elem;
             opt.innerText = elem;
             subSelect.appendChild(opt);
