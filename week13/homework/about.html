@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous">
+
+	</script>
+	<title>LATech 4 Good</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+
+			<div>
+				<a href="index.html"><img src="logo.jpg" class="logo" alt="company logo"></a>
+
+      <label for="toggleAssist">
+        <img src="menuicon.png" class="toggle-button" alt="menu toggle button">
+      </label>
+      <input type="checkbox" id="toggleAssist">
+      
+      <ul class="nav-links">
+        <li><a href="donation.html" class="donation">Donate</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="mission">
+      <h1>Get to know us</h1><br>
+    <p><em><b class="text-center">We are an early stage nonprofit startup… with a history</b></em>
+      <br><br>
+LA Tech4Good was established as a nonprofit entity in September 2019 from a recognition that the tech and social good nexus is very broad reaching, and a specific desire to narrow the gap between the nonprofit and tech worlds. 
+  <br><br>
+Having focused ongoing attention on the digital divide, when Covid arrived six months later we knew that digital access would be a touchstone during the pandemic – and we launched a Digital for All initiative. At the same time, the monthly in-person events that we were known for became a thing of the past. And as Black Lives Matter protests rocked the world, we looked to find where the Tech for Good space intersects, and focused attention on data biases and on Black social change technologists.
+<br><br>
+In October 2020, we were instrumental in bringing a strong nonprofit tech presence in a Data for Good track at Data Con LA conference. And in December we are initiating a new Equity & Ethics in Data Workshop Series. In new Covid conditions, we’re expanding our content and thought leadership to host guest articles, coverage and partner events.
+<br><br>
+Over a decade ago, TechSoup and NTEN, leading tech nonprofits, created “local tech clubs” – volunteer groups in many cities that focused on free tech training for nonprofit staff. After volunteering as an organizer here in LA, our Executive Director, Karen Borchgrevink, made a strategic decision to shift to a new model in order to maximize our potential. Karen now brings over five years’ practice to LA Tech4Good.</p>
+<br>
+<h2 class="text-center">Join our fabulous team!</h2>
+      <div class="container">
+        <button id="partner1">
+        <img src="s1.jpg" alt="Karen" class="grid-photo1">
+        </button>
+        <button id="partner2">
+        <img src="s2.jpg" alt="Daphne"  class="grid-photo2">
+        </button>
+        <button id="partner3">
+        <img src="s3.png" alt="Dominique" class="grid-photo3">
+        </button>
+        <button id="partner4">
+        <img src="s4.jpg" alt="Fatima" class="grid-photo4">
+        </button>
+        <button id="partner5">
+        <img src="s5.jpg" alt="Jared" class="grid-photo5">
+        </button>
+        <button id="partner6">
+        <img src="s6.jpg" alt="Kelly" class="grid-photo6">
+        </button>
+        <button id="partner7">
+        <img src="s7.jpg" alt="Nancy" class="grid-photo7">
+        </button>
+        <button id="partner8">
+        <img src="s8.JPG" alt="Rachel" class="grid-photo8">
+        </button>
+      </div>
+
+      <div>
+        <h2>Click the images above to meet your mentor</h2>
+      </div>
+
+      <div>
+          <img src="" id="partnerIMG">
+          <p id="pInfo"></p>
+      </div>
+
+    </section>
+  </main>
+  
+    <br><br>
+    <footer>
+      <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>	
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>	
+	    </div>
+    </footer>
+    <script>
+      
+let partnerBTN1 = document.getElementById("partner1");
+let partnerBTN2 = document.getElementById("partner2");
+let partnerBTN3 = document.getElementById("partner3");
+let partnerBTN4 = document.getElementById("partner4");
+let partnerBTN5 = document.getElementById("partner5");
+let partnerBTN6 = document.getElementById("partner6");
+let partnerBTN7 = document.getElementById("partner7");
+let partnerBTN8 = document.getElementById("partner8");
+
+let toggle1 = function() {
+    if(partnerBTN1.alt = "Karen") {
+        partnerIMG.src = "s1.jpg";
+        pInfo.innerHTML = "Hi, my name is Karen. I am the executive director. Thank you for visitng us.";
+    }
+
+}
+
+let toggle2 = function() {
+
+     if(partnerBTN2.alt = "Daphne") {
+        partnerIMG.src = "s2.jpg";
+        pInfo.innerHTML = "Hi, my name is Daphne. I am a part-time volunteer.";
+        }
+}
+let toggle3 = function() {
+
+     if(partnerBTN3.alt = "Dominique") {
+        partnerIMG.src = "s3.png";
+        pInfo.innerHTML = "Hi, my name is Dominique. I am a full-time volunteer.";
+        }
+}
+let toggle4 = function() {
+
+     if(partnerBTN4.alt = "Fatima") {
+        partnerIMG.src = "s4.jpg";
+        pInfo.innerHTML = "Hi, my name is Fatima. I am a tech enthusiast.";
+        }
+}
+let toggle5 = function() {
+
+     if(partnerBTN5.alt = "Jared") {
+        partnerIMG.src = "s5.jpg";
+        pInfo.innerHTML = "Hi, my name is Jared. I am a tech specialist.";
+        }
+}
+let toggle6 = function() {
+
+     if(partnerBTN6.alt = "Kelly") {
+        partnerIMG.src = "s6.jpg";
+        pInfo.innerHTML = "Hi, my name is Kelly. I am a part-time volunteer.";
+        }
+}
+let toggle7 = function() {
+
+     if(partnerBTN7.alt = "Nancy") {
+        partnerIMG.src = "s7.jpg";
+        pInfo.innerHTML = "Hi, my name is Nancy. I am an active advisor.";
+        }
+}
+let toggle8 = function() {
+
+     if(partnerBTN8.alt = "Rachel") {
+        partnerIMG.src = "s8.JPG";
+        pInfo.innerHTML = "Hi, my name is Rachel. I am a tech lead.";
+        }
+}
+
+
+
+
+partnerBTN1.addEventListener("click", toggle1);
+partnerBTN2.addEventListener("click", toggle2);
+partnerBTN3.addEventListener("click", toggle3);
+partnerBTN4.addEventListener("click", toggle4);
+partnerBTN5.addEventListener("click", toggle5);
+partnerBTN6.addEventListener("click", toggle6);
+partnerBTN7.addEventListener("click", toggle7);
+partnerBTN8.addEventListener("click", toggle8);
+
+
+    </script>
+
+</body>
+</html>

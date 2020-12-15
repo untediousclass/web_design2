@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0px;
+    font-family: Lato;
+}
+
+header {
+    width: 100%;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.toggle-button {
+    width: 40px;
+    float: right;
+    margin: 10px;
+}
+
+#toggleAssist,
+ul.nav-links {
+    display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display: block;
+}
+
+
+ul.nav-links {
+    list-style: none;
+    margin: 0px;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+
+.nav-links li {
+    padding-right: 10px;
+
+}
+
+.nav-links a {
+    text-transform: uppercase;  
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+button {
+    border: none;
+}
+
+div#shoeIMG {
+    width:fit-content;
+    display: flex;
+}
+
+@media (min-width: 450px) {
+    main {
+        width: 400px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    a.donation {
+        border: 4px solid red;
+        background-color: red;
+        color: white;
+
+    }
+    nav ul li {
+        padding-bottom: inherit;
+    }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    nav ul {
+        text-align:right;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+
+
+    ul.nav-links {
+        display: block;
+        float:right;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    main {
+        width: 1000px;
+    }
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('container.css');
+
+body {
+    margin: 0px;
+    font-family: Lato;
+}
+
+header {
+    width: 100%;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.toggle-button {
+    width: 40px;
+    float: right;
+    margin: 10px;
+}
+
+#toggleAssist,
+ul.nav-links {
+    display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display: block;
+}
+
+
+ul.nav-links {
+    list-style: none;
+    margin: 0px;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+
+.nav-links li {
+    padding-right: 10px;
+
+}
+
+.nav-links a {
+    text-transform: uppercase;  
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.mission {
+    width: 100%;
+    background-color: orange;
+    margin: auto;
+    color: black;
+}
+
+.blog-box {
+    max-width: 600px;
+    background-color: orange;
+    margin: auto;
+}
+
+.background {
+    width: 80%;
+    display: block;
+    text-align: center;
+      margin: auto;
+  }
+  
+
+
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+form h2 {
+    color: white;
+}
+
+.ourproject {
+  width: 80%;
+  display: block;
+  margin: auto;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.ourproject img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  border-style:none;
+  background:none;
+}
+
+form button {
+    border-style: none;
+    background-color: white;
+    border-radius: 0px;
+}
+
+.form-box {
+  display: block;
+  margin: auto;
+  background-color: white;
+  max-width: 50%;
+  padding: 10px;
+}
+
+textarea {
+  width: 95%;
+}
+
+btn1 {
+  float: right;
+}
+
+.social{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.social a i {
+  width: 100px;
+  color: black;
+
+}
+
+@media (min-width: 450px) {
+   
+    .mission {
+        width: 80%;
+        letter-spacing: 4px;
+        display: block;
+        margin: auto;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    a.donation {
+        border: 4px solid red;
+        background-color: red;
+        color: white;
+
+    }
+    nav ul li {
+        padding-bottom: inherit;
+    }
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    nav ul {
+        text-align:right;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+
+
+    ul.nav-links {
+        display: block;
+        float:right;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+}
