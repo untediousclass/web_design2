@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and hide images</title>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            width: 1440px;
+        }
+        img {
+            width: 20%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <img src="ns1.png" alt="nike af1" id="n1">
+        <img src="ns2.png" alt="nike airmax 90" id="n2">
+        <img src="ns3.png" alt="nike airmax 95" id="n3">
+        <img src="ns4.png" alt="nike airmax 97" id="n4">
+   
+
+    </div>
+    <div class="flex">
+        <button id="sh1">Show/Hide</button>
+        <button id="sh2">Show/Hide</button>
+        <button id="sh3">Show/Hide</button>
+        <button id="sh4">Show/Hide</button>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sh1").click(function(){
+                $("#n1").toggle();
+            });
+            $("#sh2").click(function(){
+                $("#n2").toggle();
+            });
+            $("#sh3").click(function(){
+                $("#n3").toggle();
+            });
+            $("#sh4").click(function(){
+                $("#n4").toggle();
+            });
+
+        })        
+    </script>
+
+</body>
+</html>
